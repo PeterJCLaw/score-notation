@@ -11,7 +11,7 @@ page = urllib.urlopen('http://isburning.me/srobomatches/%d.txt' % match)
 
 print 'T\tScore'
 for line in page.readlines():
-	team, string = line.split(' ')
+	team, string = line.strip().split(' ')
 	score = parser.fsm(string)
-	print '%s\t%s\t%s' % (team, score, string.strip())
+	print '%s\t%s\t%s' % (team, score, string)
 

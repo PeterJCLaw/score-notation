@@ -1,0 +1,5 @@
+0	# Anoter test of an illegal set
+M	1
+Ru	1 + 3
+Rd	1 + 3 + 3
+-1

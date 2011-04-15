@@ -5,9 +5,9 @@ import parser
 import sys
 
 match = sys.argv[1]
-match = int(match)
+print 'Match %s' % match
 
-page = urllib.urlopen('http://isburning.me/srobomatches/%d.txt' % match)
+page = urllib.urlopen('http://isburning.me/srobomatches/%s.txt' % match)
 
 print 'T\tScore'
 for line in page.readlines():

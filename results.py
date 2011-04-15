@@ -19,7 +19,7 @@ def getMatchResult(match):
 def printResult(result):
 	print "Pos\tTeam\tScore\tString"
 	pos = 1
-	for points in sorted(result.iterkeys()):
+	for points in sorted(result.iterkeys(), reverse=True):
 		nTeams = 0
 		position = result[points]
 		for res in position:

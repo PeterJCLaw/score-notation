@@ -1,3 +1,4 @@
 ParseScore.hi
 ParseScore.o
 parserscore
+*.pyc

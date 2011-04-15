@@ -5,8 +5,6 @@ import parser
 import sys
 import matchpoints
 
-NUM_MATCHES = 39
-
 def getMatchResult(match):
 	result = {}
 	for score in matchpoints.getScore(match):

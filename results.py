@@ -3,6 +3,23 @@
 import sys
 import matchpoints
 
+NUM_MATCHES = 39
+
+def getBestScores(num_matches):
+	result = {}
+	for match in range(1, num_matches):
+		try:
+			for score in matchpoints.getScore(match):
+				points = score[1]
+				if points not in result:
+					result[points] = []
+
+				result[points].append(score)
+		except:
+			pass
+
+	return result
+
 def getMatchResult(match):
 	result = {}
 	for score in matchpoints.getScore(match):
@@ -29,5 +46,9 @@ if __name__ == '__main__':
 	match = sys.argv[1]
 	print "Results for match %s" % match
 	res = getMatchResult(match)
+	printResult(res)
+
+	print "Best scores for all matches:"
+	res = getBestScores(NUM_MATCHES)
 	printResult(res)
 

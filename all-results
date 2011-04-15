@@ -1,0 +1,6 @@
+#!/bin/sh
+
+for a in `seq 1 38`
+do
+  python results.py $a
+done

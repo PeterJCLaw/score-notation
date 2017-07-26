@@ -1,3 +1,5 @@
+# Student Robotics 2011 Scorer
+
 This is a score notation reader and scorer for the 2011
 [Student Robotics](https://www.studentrobotics.org) competition game
 _Tin Can Rally_.
